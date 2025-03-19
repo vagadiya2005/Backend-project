@@ -11,9 +11,7 @@ jobs:
       - run:
           name: Deploy Over SSH
           command: |
-            ssh -o StrictHostKeyChecking=no ubuntu@3.15.24.7 <<-'ENDSSH'
-              pwd
-            ENDSSH
+            ssh -o StrictHostKeyChecking=no ubuntu@3.15.24.7 "pwd"
 
 workflows:
   version: 2
