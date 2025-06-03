@@ -16,7 +16,14 @@ const updateUserRoute = require('./routes/updateUserRoute');
 const app = express();
 
 app.use(bodyParser.json());
-app.use(cors());
+
+const corsOptions = {
+  origin: 'https://backend-project-1-lh7s.onrender.com/',
+  methods: ['GET', 'POST','PUT','DELETE'],
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
 
 app.use('/api/users', userRoutes);   // user routes to save the form
 app.use('/api/locations', locationRoutes);   // get location for the registration form
