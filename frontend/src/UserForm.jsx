@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import './UserForm.css';
 
-const BASE_URL = "http://localhost:5000/api";
+const BASE_URL = "https://backend-project-m6p9.onrender.com/api";
 
 const UserForm = () => {
   const [countries, setCountries] = useState([]);

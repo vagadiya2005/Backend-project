@@ -10,7 +10,7 @@
 
 //   const fetchLocations = async () => {
 //     try {
-//       const res = await fetch('http://localhost:5000/api/locations/hirarchy');
+//       const res = await fetch('https://backend-project-m6p9.onrender.com/api/locations/hirarchy');
 //       const data = await res.json();
 //       setLocations(data);
 //     } catch (error) {

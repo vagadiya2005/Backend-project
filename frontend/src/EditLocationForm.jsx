@@ -15,7 +15,7 @@ const EditLocationForm = ({ isOpen, onClose, locationData, onSave }) => {
   useEffect(() => {
     const fetchHierarchy = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/locations/hirarchy');
+        const res = await axios.get('https://backend-project-m6p9.onrender.com/api/locations/hirarchy');
         setCountries(res.data);
       } catch (err) {
         console.error('Error fetching hierarchy', err);
@@ -56,13 +56,13 @@ const EditLocationForm = ({ isOpen, onClose, locationData, onSave }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:5000/api/location/country/${locationData.country_id}`, {
+      await axios.put(`https://backend-project-m6p9.onrender.com/api/location/country/${locationData.country_id}`, {
         country_name: countries.find(c => c.country_id === selectedCountry)?.country_name || ''
       });
-      await axios.put(`http://localhost:5000/api/location/state/${locationData.state_id}`, {
+      await axios.put(`https://backend-project-m6p9.onrender.com/api/location/state/${locationData.state_id}`, {
         state_name: states.find(s => s.state_id === selectedState)?.state_name || ''
       });
-      await axios.put(`http://localhost:5000/api/location/city/${locationData.city_id}`, {
+      await axios.put(`https://backend-project-m6p9.onrender.com/api/location/city/${locationData.city_id}`, {
         city_name: cities.find(c => c.city_id === selectedCity)?.city_name || ''
       });
 

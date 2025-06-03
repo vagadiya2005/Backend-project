@@ -34,7 +34,7 @@ const UserTable = () => {
   // fetch users for display in the table
   const fetchUsers = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/users");
+      const res = await axios.get("https://backend-project-m6p9.onrender.com/api/users");
       setUsers(res.data);
     } catch (err) {
       console.error("Error fetching users:", err);
@@ -45,7 +45,7 @@ const UserTable = () => {
   const fetchLocations = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/locations/hirarchy"
+        "https://backend-project-m6p9.onrender.com/api/locations/hirarchy"
       );
       setLocations(res.data);
     } catch (err) {
@@ -72,7 +72,7 @@ const UserTable = () => {
   const handleUpdate = async () => {
     try {
       await axios.put(
-        `http://localhost:5000/api/update/user/${editingUser}`,
+        `https://backend-project-m6p9.onrender.com/api/update/user/${editingUser}`,
         formData
       );
       setEditingUser(null);
@@ -85,7 +85,7 @@ const UserTable = () => {
   const handleDelete = async (id) => {
     if (!window.confirm("Delete this user?")) return;
     try {
-      await axios.delete(`http://localhost:5000/api/delete/user/${id}`);
+      await axios.delete(`https://backend-project-m6p9.onrender.com/api/delete/user/${id}`);
       setMessage("User Deleted successfully!");
       fetchUsers();
 

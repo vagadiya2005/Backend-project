@@ -6,8 +6,8 @@ import './LocationTable.css';
 import EditLocationForm from './EditLocationForm';
 
 
-const BASE_URL = 'http://localhost:5000/api/location/delete';
-const GET_LOCATIONS_TREE = "http://localhost:5000/api/locations/hirarchy";
+const BASE_URL = 'https://backend-project-m6p9.onrender.com/api/location/delete';
+const GET_LOCATIONS_TREE = "https://backend-project-m6p9.onrender.com/api/locations/hirarchy";
 
 
 

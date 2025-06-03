@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './addLocationForm.css';
 
-const BASE_URL_GET_LOCATION = 'http://localhost:5000/api/locations';
-const BASE_URL_ADD_LOCATION = 'http://localhost:5000/api/location/add';
+const BASE_URL_GET_LOCATION = 'https://backend-project-m6p9.onrender.com/api/locations';
+const BASE_URL_ADD_LOCATION = 'https://backend-project-m6p9.onrender.com/api/location/add';
 
 const AddLocationForm = () => {
   const [countries, setCountries] = useState([]);
