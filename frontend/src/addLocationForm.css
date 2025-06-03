@@ -1,0 +1,62 @@
+/* Container */
+.add-location-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Section headings */
+.add-location-container h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 22px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+/* Inputs and selects */
+.add-location-container input,
+.add-location-container select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.add-location-container input:focus,
+.add-location-container select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Buttons */
+.add-location-container button {
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-location-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .add-location-container {
+    padding: 15px;
+  }
+}
