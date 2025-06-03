@@ -17,13 +17,9 @@ const app = express();
 
 app.use(bodyParser.json());
 
-const corsOptions = {
-  origin: 'https://backend-project-1-lh7s.onrender.com/api/users',
-  methods: ['GET', 'POST','PUT','DELETE'],
-  allowedHeaders: 'Content-Type,Authorization', 
-};
 
-app.use(cors(corsOptions));
+
+app.use(cors());
 
 app.use('/api/users', userRoutes);   // user routes to save the form
 app.use('/api/locations', locationRoutes);   // get location for the registration form
