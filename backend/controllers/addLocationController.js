@@ -1,4 +1,4 @@
-const CountryModel = require('../models/CountryModel');
+const CountryModel = require('../models/countryModel');
 const StateModel = require('../models/stateModel');
 const CityModel = require('../models/cityModel');
 
