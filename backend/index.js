@@ -18,7 +18,7 @@ const app = express();
 app.use(bodyParser.json());
 
 const corsOptions = {
-  origin: 'https://backend-project-1-lh7s.onrender.com/',
+  origin: 'https://backend-project-1-lh7s.onrender.com/*',
   methods: ['GET', 'POST','PUT','DELETE'],
   allowedHeaders: 'Content-Type,Authorization', 
 };
